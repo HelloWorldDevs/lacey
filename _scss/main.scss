@@ -262,7 +262,7 @@ a[href="http://www.tysonsteele.com/"]:hover {
 }
 
 a:hover {
-  color: initial;
+  color: inherit;
 }
 
 #requestModalContainer .modal-dialog {
@@ -361,4 +361,9 @@ button[class=close] {
 
 img.image-padding {
   padding: 10px;
+}
+
+.decoration-1 {
+  border-bottom: solid 1px white;
+  line-height: 2;
 }
