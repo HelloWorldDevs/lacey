@@ -240,10 +240,16 @@ section {
   }
 }
 
+a.btn-style-2,
 button.btn-style-2 {
-  color: #67250d;
-  background: #fbad17;
-  border: 2px solid #67250d;
+   color: #FFF;
+   background: #FF7A00;
+ }
+
+a.btn-style-2:hover,
+button.btn-style-2:hover {
+  color: #FFF;
+  background: #ce6300;
 }
 
 button.btn {
