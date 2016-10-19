@@ -38,11 +38,11 @@ body {
 //  color: #F36525;
 //}
 //
-//.font-white,
-//a.font-white {
-//  color: #ffffff !important;
-//}
-//
+.font-white,
+a.font-white {
+  color: #ffffff !important;
+}
+
 //.font-gold {
 //  color: #FBAD17;
 //}
@@ -53,9 +53,9 @@ body {
 //  border-color: #67250D;
 //}
 //
-//.font-shadowed {
-//  text-shadow: 2px 2px 5px #000;
-//}
+.font-shadowed {
+  text-shadow: 2px 2px 5px #000;
+}
 //
 //.bg-light-blue {
 //  background-color: #EBF4F7;
@@ -98,4 +98,16 @@ body {
 
 .font-dark-blue {
   color: #0D2D3F;
+}
+
+.font-amber {
+  color: #c79c4a;
+}
+
+.font-dark-amber {
+  color: #51504e;
+}
+
+.font-yellow {
+  color: #fff020;
 }

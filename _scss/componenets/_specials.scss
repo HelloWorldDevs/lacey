@@ -9,17 +9,17 @@
   }
 }
 .specials-1 {
-  background: #F7881F;
-  color:#F7881F;
+  background: #E59908;
+  color:#E59908;
 }
 .specials-2 {
-  background: #F36525;
-  color:#F36525;
+  background: #2DA47B;
+  color:#2DA47B;
 }
 
 .specials-3 {
-  background: #FBAD17;
-  color:#FBAD17;
+  background: #52A3BF;
+  color:#52A3BF;
 }
 .specials-row p {
   font-size:18px;
@@ -88,15 +88,19 @@
   margin-left: -45px;
 }
 .price:before {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
   content: '$';
   font-size: 30px;
   color: #FFF;
   position: absolute;
-  left: -10px;
-  top: 40px;
+  left: -5px;
+  top: 30px;
 }
 .dollar {
   display: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
 }
 .specials-row h5 {
   font-size:32px;
