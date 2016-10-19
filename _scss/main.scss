@@ -343,3 +343,18 @@ button[class=close] {
 #section-specials {
   background-image: url('/assets/fall-specials-bkgd.jpg');
 }
+
+#service-images {
+  background-image: url('/assets/mountain-top.png');
+  background-size: initial;
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+}
+
+#service-tour-section {
+  background: linear-gradient(#FFFFFF, #fcf0c7);
+}
+
+#below-service-images {
+  background: linear-gradient(#E4E0D0, #6F989A);
+}
