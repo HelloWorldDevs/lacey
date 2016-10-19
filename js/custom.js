@@ -79,14 +79,29 @@
     loop: true,
     autoplay: true,
     autoplaySpeed: 400,
+    margin: 50,
     nav: true,
     dots: false,
     navText: [
-      '<i class="icon-chevron-sign-left"></i>',
-      '<i class="icon-chevron-sign-right"></i>'
+      '<i class="fa fa-chevron-circle-left" aria-hidden="true"></i>',
+      '<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>'
     ],
     autoplayTimeout: 6000,
-    autoplayHoverPause:true
+    autoplayHoverPause:true,
+    responsive : {
+      0 : {
+        items : 1
+      },
+      550 : {
+        items : 2
+      },
+      768 : {
+        items : 3
+      },
+      990 : {
+        items : 4
+      }
+    }
   });
 
    new Swiper('.swiper-container', {
