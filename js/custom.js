@@ -60,7 +60,7 @@
     autoplayHoverPause:true,
     responsive : {
       0 : {
-      items : 1
+        items : 1
       },
       550 : {
         items : 2
@@ -104,10 +104,11 @@
     }
   });
 
-   new Swiper('.swiper-container', {
-      speed: 400,
-      autoplay: false
-    });
+  new Swiper('.swiper-container', {
+    speed: 400,
+    autoplay: 6000,
+    loop: true
+  });
 
   $('#google-map5').gMap({
     address: '37.283091,-107.8760767',
@@ -130,10 +131,10 @@
     }
   });
 
-  
+
   // Fix for menu scroll to links. Offsets are needed for desktop but not tablet or mobile.
   // ======================================================================================
-  
+
   // Store Menu Offests for reset on screen resize reset
   var menuOffsets = [];
   $('#primary-menu').find('a').each(function(index) {
