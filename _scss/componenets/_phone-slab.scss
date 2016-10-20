@@ -51,6 +51,9 @@
 }
 #slider {
   margin-bottom: -173px;
+  @media screen and (max-width: $width-md) {
+    margin-bottom: -249px;
+  }
 }
 
 .phone-slab-bottombar {
