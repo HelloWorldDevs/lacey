@@ -338,6 +338,17 @@ button[class=close] {
 
 #section-about {
   background-image: url('/assets/lacey-bio.jpg');
+  @media screen and (max-width: $width-md) {
+    background-color: #FFFFFF;
+    background-image: none;
+  }
+}
+
+img[src="assets/lacey-bio.jpg"] {
+  margin-top: -100px;
+  @media screen and (max-width: $width-sm) {
+    margin-top: -80px;
+  }
 }
 
 #section-specials {
@@ -367,3 +378,4 @@ img.image-padding {
   border-bottom: solid 1px white;
   line-height: 2;
 }
+
