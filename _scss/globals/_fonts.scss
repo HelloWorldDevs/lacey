@@ -272,7 +272,11 @@ p {
 }
 
 #logo img {
-	max-width: 250px;
+	@media screen and (max-width: $width-xs) {
+		padding-top: 15px;
+		max-width: 225px;
+		height: inherit;
+	}
 }
 
 #section-services p {
