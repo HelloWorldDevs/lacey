@@ -295,11 +295,11 @@ a:hover {
 
 .swiper_wrapper .swiper-slide:nth-child(1),
 .swiper_wrapper .swiper-slide:nth-child(3) {
-  background-position: 40% center;
+  background-position: 40% top;
 }
 
 .swiper_wrapper .swiper-slide:nth-child(2) {
-  background-position: 65% center;
+  background-position: 65% top;
 
 }
 
@@ -316,6 +316,7 @@ button[class=close] {
     }
   }
 }
+
 
 .mobile-pull-fix {
   @media (max-width: $width-xs) {
