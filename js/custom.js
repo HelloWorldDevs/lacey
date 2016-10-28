@@ -40,13 +40,14 @@
   };
 
   var HWD = new HelloWorldDevs();
+  var $tourCarousel = $(".tour-carousel");
+  var $tourModalCarousel = $('.tour-modal-carousel');
 
   HWD.noOrphans('h1,h2,h3,h4,h5,h6,li,p', '.price-box-h3-mid');
   HWD.mailForm('#mail-form', '#success_msg' , '7fb35345-752d-4792-9480-cd3db6674a62');
 
-  // initial carousel in modal
+  // initial carousel
   $('.team-carousel').owlCarousel({
-    items: 4,
     loop: true,
     autoplay: true,
     autoplaySpeed: 400,
@@ -74,7 +75,7 @@
     }
   });
 
-  $('.tour-carousel').owlCarousel({
+  $tourCarousel.owlCarousel({
     items: 1,
     loop: true,
     autoplay: true,
@@ -100,6 +101,28 @@
       },
       990 : {
         items : 4
+      }
+    }
+  });
+  
+
+  $tourModalCarousel.owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplaySpeed: 400,
+    margin: 50,
+    nav: true,
+    dots: false,
+    navText: [
+      '<i class="fa fa-chevron-circle-left" aria-hidden="true"></i>',
+      '<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>'
+    ],
+    autoplayTimeout: 6000,
+    autoplayHoverPause:true,
+    responsive: {
+      0: {
+        items: 1
       }
     }
   });
@@ -157,6 +180,16 @@
         $(this).attr('data-offset', menuOffsets[index]);
       });
     }
+  });
+
+  $('.js-carousel-sync').click(function() {
+    var tourIndex = $(this).attr('carousel-target');
+    $('.tour-modal-carousel').trigger('to.owl.carousel', [ tourIndex - 1 , 0] );
+  });
+
+  // fix rendering ghost in tour modal
+  $('#tourModal').on('shown.bs.modal', function() {
+    $('.tour-modal-item').removeClass('tour-modal-item');
   });
 
 
