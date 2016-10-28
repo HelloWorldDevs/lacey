@@ -384,3 +384,10 @@ img.image-padding {
 #bf-revz-widget-2235011373 {
   max-height: 800px;
 }
+
+.visible-xxs-inline {
+  display: none;
+  @media screen and (max-width: $width-xs) {
+    display: inline;
+  }
+}
